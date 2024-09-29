@@ -1,8 +1,8 @@
 
-import { Sidebar } from '../components/ui/sidebar'; // Ensure correct path for Sidebar
-import { Button } from '../components/ui/button'; // Ensure correct path for Button
-import { Avatar, AvatarImage, AvatarFallback } from '../components/ui/avatar'; // Use the updated Avatar components
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/tabs'; // Ensure correct path for Tabs
+import { Sidebar } from '@/components/ui/Sidebar';
+import { Button } from '../components/ui/button'; 
+import { Avatar, AvatarImage, AvatarFallback } from '../components/ui/avatar'; 
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/Tabs';
 
 const LogsPage = () => {
   const menuItems = ['Home', 'Logging', 'Trainers and Users', 'Settings'];
@@ -40,7 +40,7 @@ const LogsPage = () => {
             <TabsTrigger value="steps">Steps Log</TabsTrigger>
           </TabsList>
 
-          {/* Workout Log Content */}
+          {/* Tab 1: Workout Log */}
           <TabsContent value="workout">
             <h3 className="text-lg font-semibold mb-4">Available Workouts</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -59,8 +59,45 @@ const LogsPage = () => {
             </div>
           </TabsContent>
 
-          {/* Other Tabs Content */}
-          {/* Implement the other tabs content here (Weight, Sleep, Calories, etc.) */}
+          {/* Tab 2: Weight Log */}
+          <TabsContent value="weight">
+            <h3 className="text-lg font-semibold mb-4">Weight Log</h3>
+            <div className="p-4 bg-gray-100 rounded-md shadow">
+              <p>Log your weight regularly to track progress.</p>
+            </div>
+          </TabsContent>
+
+          {/* Tab 3: Sleep Log */}
+          <TabsContent value="sleep">
+            <h3 className="text-lg font-semibold mb-4">Sleep Log</h3>
+            <div className="p-4 bg-gray-100 rounded-md shadow">
+              <p>Track your sleeping habits to improve your rest and recovery.</p>
+            </div>
+          </TabsContent>
+
+          {/* Tab 4: Calories Log */}
+          <TabsContent value="calories">
+            <h3 className="text-lg font-semibold mb-4">Calories Log</h3>
+            <div className="p-4 bg-gray-100 rounded-md shadow">
+              <p>Monitor your calorie intake to stay on track with your dietary goals.</p>
+            </div>
+          </TabsContent>
+
+          {/* Tab 5: Water Log */}
+          <TabsContent value="water">
+            <h3 className="text-lg font-semibold mb-4">Water Log</h3>
+            <div className="p-4 bg-gray-100 rounded-md shadow">
+              <p>Keep track of your water intake to ensure you are staying hydrated.</p>
+            </div>
+          </TabsContent>
+
+          {/* Tab 6: Steps Log */}
+          <TabsContent value="steps">
+            <h3 className="text-lg font-semibold mb-4">Steps Log</h3>
+            <div className="p-4 bg-gray-100 rounded-md shadow">
+              <p>Track your daily steps to measure your activity level.</p>
+            </div>
+          </TabsContent>
         </Tabs>
       </div>
     </div>
