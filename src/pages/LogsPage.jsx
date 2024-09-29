@@ -2,7 +2,7 @@
 import { Sidebar } from '@/components/ui/sidebar'; 
 import { Button } from '../components/ui/button'; 
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'; 
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/tabs'; 
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/Tabs'; 
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/card'; 
 
 const LogsPage = () => {
