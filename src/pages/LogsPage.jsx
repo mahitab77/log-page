@@ -1,7 +1,7 @@
 
 import { Sidebar } from '@/components/ui/Sidebar';
 import { Button } from '../components/ui/button'; 
-import { Avatar, AvatarImage, AvatarFallback } from '../components/ui/avatar'; 
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/Avatar'; 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/Tabs';
 
 const LogsPage = () => {
